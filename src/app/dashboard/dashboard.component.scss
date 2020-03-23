@@ -1,0 +1,17 @@
+.hero-container {
+  display: flex;
+}
+.hero {
+  flex: 1;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(gray, 10%);
+  }
+}

@@ -1,0 +1,14 @@
+<div class="card" style="margin: 1rem;" *ngIf="hero">
+  <div class="card-header">{{ hero.name }} details</div>
+  <div class="card-body">
+    <div class="hero-id">Id: {{ hero.id }}</div>
+    <div class="form-group">
+      <label for="" class="form-label">Name</label>
+      <input type="text" class="form-control" [(ngModel)]="hero.name" />
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-secondary" (click)="onGoBackButtonClick()">Go Back</button>
+    <button class="btn btn-primary" (click)="onSaveButtonClick()">Save</button>
+  </div>
+</div>

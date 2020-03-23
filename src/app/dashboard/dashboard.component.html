@@ -1,0 +1,7 @@
+<h4 style="text-align: center;">Top Heroes</h4>
+
+<div class="hero-container">
+  <div class="hero" *ngFor="let hero of topHeroes" (click)="onHeroClick(hero)">
+    {{ hero.name }}
+  </div>
+</div>
