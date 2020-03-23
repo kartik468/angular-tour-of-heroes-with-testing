@@ -35,8 +35,8 @@ export class HeroService {
     );
   }
 
-  deleteHero(id: number): Observable<Hero> {
-    return this.http.delete<Hero>(this.heroesUrl + `/${id}`).pipe(catchError(this.handleError<any>('getHero')));
+  deleteHero(id: number): Observable<any> {
+    return this.http.delete<any>(this.heroesUrl + `/${id}`).pipe(catchError(this.handleError<any>('getHero')));
   }
 
   handleError<T>(serviceName: string, fallbackResult?: any) {

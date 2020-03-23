@@ -12,7 +12,7 @@ import { Location } from '@angular/common';
 export class HeroesDetailComponent implements OnInit {
   hero: Hero;
 
-  constructor(private route: ActivatedRoute, private heroService: HeroService, private location: Location, private router: Router) {}
+  constructor(private route: ActivatedRoute, private heroService: HeroService, private location: Location) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
